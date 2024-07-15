@@ -91,6 +91,7 @@
                     <textarea id="equipment" name="equipment"></textarea>
                 </div>
 
+                <h2 class="image-upload">Subir imágenes</h2>
                 <label for="image" class="labelFile">
                     <span>
                         <svg xml:space="preserve"
@@ -132,12 +133,7 @@
                     </span>
                     <p>Arrastra y suelta tu archivo o imagen aquí o haz click para seleccionar un archivo.</p>
                 </label>
-                <input class="file-input" type="file" id="image" name="image" accept="image/*">
-                <form id="image-upload-form">
-                    <input type="file" id="image-input" accept="image/*">
-                    <button id="upload-button">Upload Image</button>
-                    <div id="image-preview"></div>
-                  </form>
+                <input class="file-input" type="file" id="image" name="image" accept="image/*" multiple>
                 
                 <button type="submit">Enviar</button>
             </form>

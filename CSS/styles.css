@@ -238,6 +238,11 @@ button:active {
     display: none;
   }
 
+  .image-upload{
+    color: rgb(238, 171, 95);
+    text-align: center;
+  }
+
 @media (max-width: 600px) {
     .container {
         padding: 20px;
