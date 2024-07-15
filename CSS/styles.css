@@ -219,6 +219,25 @@ button:active {
     transform: translateY(0);
 }
 
+.labelFile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 190px;
+    border: 2px dashed #ccc;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color: #404040;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .file-input{
+    display: none;
+  }
+
 @media (max-width: 600px) {
     .container {
         padding: 20px;
