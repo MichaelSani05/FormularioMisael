@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Asesoría</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/validation.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cuestionario de Asesoría</h1>
+        <form id="questionnaire" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">*Nombre completo:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">*Edad:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="weight">*Peso (En kg):</label>
+                <input type="number" id="weight" name="weight" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="fat">% de grasa (Si lo posees):</label>
+                <input type="number" id="fat" name="fat">
+            </div>
+            
+            <div class="form-group">
+                <label for="height">*Estatura (En cm):</label>
+                <input type="number" id="height" name="height" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="goal">1. - ¿Cuál es el objetivo que tienes con la asesoría?</label>
+                <textarea id="goal" name="goal"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="health">2. - ¿Tienes algún problema de salud o lesión? Si es así ¿cual seria?</label>
+                <textarea id="health" name="health"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="lifestyle">3. - ¿Qué estilo de vida llevas (Sedentario, intermedio o activo)?</label>
+                <textarea id="lifestyle" name="lifestyle"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="availability">4. - ¿Cual es la disponibilidad en tu horario?</label>
+                <textarea id="availability" name="availability"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="training">5. - ¿ Actualmente entrenas o practicas algún deporte? De ser así, describe tu entrenamiento.</label>
+                <textarea id="training" name="training"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="location">6. - ¿Entrenarás en casa o en un gimnasio?</label>
+                <textarea id="location" name="location"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="equipment">7. - En caso de entrenar en casa ¿que equipos tienes?</label>
+                <textarea id="equipment" name="equipment"></textarea>
+            </div>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="JS/validation.js"></script>
+</body>
+</html>
